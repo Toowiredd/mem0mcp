@@ -1,12 +1,8 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: cd.yml.backup
 name: Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   release:
-#     types: [published]
+  release:
+    types: [published]
 
 jobs:
   build-n-publish:

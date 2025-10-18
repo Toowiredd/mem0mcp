@@ -1,21 +1,17 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: ci.yml.backup
 name: ci
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   push:
-#     branches: [main]
-#     paths:
-#       - 'mem0/**'
-#       - 'tests/**'
-#       - 'embedchain/**'
-#   pull_request:
-#     paths:
-#       - 'mem0/**'
-#       - 'tests/**'
-#       - 'embedchain/**'
+  push:
+    branches: [main]
+    paths:
+      - 'mem0/**'
+      - 'tests/**'
+      - 'embedchain/**'
+  pull_request:
+    paths:
+      - 'mem0/**'
+      - 'tests/**'
+      - 'embedchain/**'
 
 jobs:
   check_changes:
